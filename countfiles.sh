@@ -1,3 +1,3 @@
 #! /bin/bash
 
-ls ./ -l | wc -l
+ls ./ -la | wc -l
