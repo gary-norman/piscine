@@ -19,10 +19,5 @@ func PrintComb() {
 		}
 
 	}
-<<<<<<< HEAD
 	z01.PrintRune('\n')
 }
-=======
-  z01.PrintRune('\n')
-}
->>>>>>> b2a13c4d90c322dc0ce0932715da859901392ca1
