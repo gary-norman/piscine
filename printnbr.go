@@ -10,6 +10,7 @@ func PrintNbr(n int) {
 	}
 	SetNbr(n)
 }
+
 func SetNbr(n int) {
 	var i int
 	if n == 0 {
