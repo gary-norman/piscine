@@ -1,6 +1,10 @@
 package piscine
 
 func StrLen(s string) int {
-	b := len(s)
+	a := []rune(s)
+	var b int
+	for i := 0; i < len(a); i++ {
+		b++
+	}
 	return b
 }
