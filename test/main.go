@@ -1,14 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"piscine"
-
-	"github.com/01-edu/z01"
 )
 
 func main() {
-	piscine.PrintNbr(-123)
-	piscine.PrintNbr(0)
-	piscine.PrintNbr(123)
-	z01.PrintRune('\n')
+	a := 0
+	b := 1
+	piscine.Swap(&a, &b)
+	fmt.Println(a)
+	fmt.Println(b)
 }
