@@ -6,7 +6,7 @@ func Atoi(s string) int {
 	for i := 0; i <= len(s)-1; i++ {
 		// check for double pos or neg
 		if len(s) > 1 {
-			if (s[i] == '+' && s[i+1] == '+') || (s[i] == '-' && s[i+1] == '-') {
+			if s[i] == '+' && (s[i+1] == '+' || s[i+1] == '-') || s[i] == '-' && (s[i+1] == '-' || s[i+1] == '+') {
 				b = 0
 				break
 			}
