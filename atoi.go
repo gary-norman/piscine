@@ -5,9 +5,11 @@ func Atoi(s string) int {
 	isNeg := false
 	for i := 0; i <= len(s)-1; i++ {
 		// check for double pos or neg
-		if (s[i] == '+' && s[i+1] == '+') || (s[i] == '-' && s[i+1] == '-') {
-			b = 0
-			break
+		if len(s) > 1 {
+			if (s[i] == '+' && s[i+1] == '+') || (s[i] == '-' && s[i+1] == '-') {
+				b = 0
+				break
+			}
 		}
 		// check for space
 		if s[i] == ' ' {
