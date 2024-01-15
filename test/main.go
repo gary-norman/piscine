@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	arg := 21
+	arg := 1
 	fmt.Println(piscine.IterativeFactorial(arg))
 }
