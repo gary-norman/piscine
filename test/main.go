@@ -1,11 +1,14 @@
 package main
 
 import (
-	"fmt"
+	"github.com/01-edu/z01"
+
 	"piscine"
 )
 
 func main() {
-	arg := 4
-	fmt.Println(piscine.RecursiveFactorial(arg))
+	z01.PrintRune(piscine.FirstRune("Hello!"))
+	z01.PrintRune(piscine.FirstRune("Salut!"))
+	z01.PrintRune(piscine.FirstRune("Ola!"))
+	z01.PrintRune('\n')
 }
