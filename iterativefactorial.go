@@ -1,20 +1,14 @@
 package piscine
 
-func factorial(a int) int {
-	b := a
-	if a > 1 {
-		b = b * factorial(a-1)
-	}
-	return b
-}
-
-func RecursiveFactorial(nb int) int {
+func IterativeFactorial(nb int) int {
 	if nb >= 21 || nb <= -21 {
 		return 0
 	}
 	if nb == 0 || nb == 1 {
 		return 1
 	}
-	var result = factorial(nb)
-	return result
+	for i := nb - 1; i > 0; i-- {
+		nb *= i
+	}
+	return nb
 }
