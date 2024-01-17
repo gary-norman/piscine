@@ -6,27 +6,27 @@ func Compare(a, b string) int {
 	if len(b) < len(a) {
 		smallest = len(b)
 	}
-	runea := []rune(a)
-	runeb := []rune(b)
+	// runea := []rune(a)
+	// runeb := []rune(b)
 	for i := 0; i < smallest; i++ {
-		if runea[i] < 97 {
-			runea[i] += 32
-		}
-		if runeb[i] < 97 {
-			runeb[i] += 32
-		}
-		if runea[i] > runeb[i] {
-			result = -1
-			return result
-		}
-		if runea[i] < runeb[i] {
+		// if runea[i] < 97 {
+		// 	runea[i] += 32
+		// }
+		// if runeb[i] < 97 {
+		// 	runeb[i] += 32
+		// }
+		if a[i] > b[i] {
 			result = 1
 			return result
 		}
+		if a[i] < b[i] {
+			result = -1
+			return result
+		}
 	}
-	if a > b {
+	if len(a) > len(b) {
 		result = 1
-	} else if b < a {
+	} else if len(a) < len(b) {
 		result = -1
 	}
 	return result
