@@ -2,9 +2,13 @@ package piscine
 
 func Compare(a, b string) int {
 	result := 0
+	smallest := len(a)
+	if len(b) < len(a) {
+		smallest = len(b)
+	}
 	runea := []rune(a)
 	runeb := []rune(b)
-	for i := 0; i < min(len(a), len(b)); i++ {
+	for i := 0; i < smallest; i++ {
 		if runea[i] < 97 {
 			runea[i] += 32
 		}
