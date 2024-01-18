@@ -13,6 +13,5 @@ func SplitWhiteSpaces(s string) []string {
 			}
 		}
 	}
-	print(result)
 	return result
 }
