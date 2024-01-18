@@ -13,5 +13,9 @@ func SplitWhiteSpaces(s string) []string {
 			}
 		}
 	}
+
+	if result[wordcount-1] == "" {
+		result = result[:len(result)-1]
+	}
 	return result
 }
