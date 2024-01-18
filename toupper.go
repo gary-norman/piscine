@@ -1,7 +1,7 @@
 package piscine
 
 func ToUpper(s string) string {
-	var runes = []rune(s)
+	runes := []rune(s)
 	var result string
 	for i := 0; i < len(s); i++ {
 		if s[i] >= 97 && s[i] <= 122 {
