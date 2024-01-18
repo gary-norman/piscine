@@ -3,7 +3,6 @@ package piscine
 func Capitalize(s string) string {
 	s = ToLower(s)
 	runes := []rune(s)
-	println(runes)
 	newWord := false
 	var result string
 	for i := 0; i < len(s); i++ {
