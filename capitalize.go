@@ -20,7 +20,7 @@ func Capitalize(s string) string {
 	newWord := false
 	var result string
 	for i := 0; i < len(s); i++ {
-		if i == 0 || newWord {
+		if (i == 0 || newWord) && (runes[i] >= 97 && runes[i] <= 122) {
 			runes[i] = rune(s[i] - 32)
 			result += string(runes[i])
 			newWord = false
