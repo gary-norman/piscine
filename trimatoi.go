@@ -6,8 +6,10 @@ func TrimAtoi(s string) int {
 	counter := 0
 	multiplier := 0
 	for _, char := range s {
-		if char == 45 {
-			negative = true
+		if !negative && counter == 0 {
+			if char == 45 {
+				negative = true
+			}
 		}
 		if char > 48 && char <= 57 {
 			if counter == 0 {
