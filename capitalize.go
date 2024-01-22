@@ -24,7 +24,7 @@ func Capitalize(s string) string {
 			runes[i] = rune(s[i] - 32)
 			result += string(runes[i])
 			newWord = false
-		} else if !(s[i] >= 97 && s[i] <= 122 || s[i] >= 65 && s[i] <= 90 || s[i] >= 48 && s[i] <= 57 {
+		} else if !(s[i] >= 97 && s[i] <= 122 || s[i] >= 65 && s[i] <= 90 || s[i] >= 48 && s[i] <= 57) {
 			result += string(runes[i])
 			newWord = true
 		} else {
