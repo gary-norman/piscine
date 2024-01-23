@@ -1,7 +1,7 @@
 package piscine
 
 func Map(f func(int) bool, a []int) []bool {
-	var aLen = len(a)
+	aLen := len(a)
 	result := make([]bool, aLen)
 	for i := 0; i < aLen; i++ {
 		result[i] = f(a[i])
