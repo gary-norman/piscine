@@ -13,5 +13,5 @@ func main() {
 		fmt.Printf("%v", err.Error())
 	}
 	// print "content variable"
-	println(file.Stat())
+	fmt.Println(file.Stat())
 }
