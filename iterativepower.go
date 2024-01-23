@@ -7,6 +7,10 @@ func IterativePower(nb int, power int) int {
 	if power < 0 {
 		return 0
 	}
+	// return 1 if exponent is 0
+	if power == 0 {
+		return 1
+	}
 	// iterate through the powers
 	for i := 1; i < power; i++ {
 		// perform the calculation
