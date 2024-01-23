@@ -7,7 +7,7 @@ import (
 
 func main() {
 	// import file from argument
-	file, err := os.Open(os.Args[0])
+	file, err := os.Open(os.Args[len(os.Args)-1])
 	// print error message
 	if err != nil {
 		fmt.Printf("%v", err.Error())
