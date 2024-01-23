@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-
 	// import file from argument
 	file, err := os.Open(os.Args[1])
 	// print error message
