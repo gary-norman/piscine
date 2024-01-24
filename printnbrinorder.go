@@ -13,9 +13,11 @@ func PrintNbrInOrder(n int) {
 		n /= 10
 	}
 	sliceLen := len(slice)
-	for i := 0; i < sliceLen-1-1; i++ {
-		if slice[i] > slice[i+1] {
-			slice[i], slice[i+1] = slice[i+1], slice[i]
+	for i := 0; i < sliceLen-1; i++ {
+		for j := 0; j < sliceLen-1-1; j++ {
+			if slice[j] > slice[j+1] {
+				slice[j], slice[j+1] = slice[j+1], slice[j]
+			}
 		}
 	}
 	for _, digit := range slice {
