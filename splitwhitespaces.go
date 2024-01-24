@@ -7,7 +7,7 @@ func SplitWhiteSpaces(s string) []string {
 		if string(char) != " " {
 			result[wordcount] += string(char)
 		} else {
-			if string(char) == " " || string(char) == "	" || string(char) == "\n" {
+			if string(char) == " " && string(char-1) != " " || string(char) == "	" || string(char) == "\n" {
 				result = append(result, "")
 				wordcount++
 			}
