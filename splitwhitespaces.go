@@ -3,7 +3,7 @@ package piscine
 func SplitWhiteSpaces(s string) []string {
 	result := make([]string, 1)
 	wordcount := 0
-	newword := false
+	newword := true
 	for _, char := range s {
 		if string(char) != " " {
 			result[wordcount] += string(char)
