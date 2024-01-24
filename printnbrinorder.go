@@ -8,13 +8,13 @@ func PrintNbrInOrder(n int) {
 		return
 	}
 	var slice []int
-	for n >= 0 {
+	for n > 0 {
 		slice = append(slice, n%10)
 		n /= 10
 	}
 	sliceLen := len(slice)
-	for i := 0; i < sliceLen-1; i++ {
-		for j := 0; j < sliceLen-1-1; j++ {
+	for i := 0; i < sliceLen; i++ {
+		for j := 0; j < sliceLen-1; j++ {
 			if slice[j] > slice[j+1] {
 				slice[j], slice[j+1] = slice[j+1], slice[j]
 			}
