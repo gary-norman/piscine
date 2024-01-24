@@ -8,7 +8,7 @@ func PrintNbrInOrder(n int) {
 		return
 	}
 	var slice []int
-	for n > 0 {
+	for n >= 0 {
 		slice = append(slice, n%10)
 		n /= 10
 	}
