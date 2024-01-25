@@ -12,6 +12,7 @@ func main() {
 		for i := 0; i < argsL; i++ {
 			if os.Args[i] == word {
 				fmt.Println("Alert!!!")
+				return
 			}
 		}
 	}
