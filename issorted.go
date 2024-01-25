@@ -17,8 +17,8 @@ func IsSorted(F func(a, b int) int, slice []int) bool {
 	}
 	slices := len(slice) - 1
 	if counterFwd == slices || counterBkwd == slices {
-		return true
-	} else {
 		return false
+	} else {
+		return true
 	}
 }
