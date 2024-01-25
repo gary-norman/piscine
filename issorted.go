@@ -1,15 +1,17 @@
 package piscine
 
-func IsSorted(f func(a, b int) int, slice []int) bool {
+func F(a, b int) int {
+	return a - b
+}
+
+func IsSorted(F func(a, b int) int, slice []int) bool {
 	counterFwd := 0
 	counterBkwd := 0
-	for i := 1; i < len(slice)-1; i++ {
-		if f(slice[i], slice[i]-1) >= 0 {
+	for i := 0; i < len(slice)-1; i++ {
+		if F(slice[i+1], slice[i]) >= 0 {
 			counterFwd++
 		}
-	}
-	for i := len(slice) - 1; i > 0; i-- {
-		if f(slice[i], slice[i-1]) >= 0 {
+		if F(slice[i], slice[i+1]) >= 0 {
 			counterBkwd++
 		}
 	}
