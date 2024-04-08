@@ -6,19 +6,12 @@ import (
 )
 
 func main() {
-	a1 := []int{0, 1, 2, 3, 4, 5}
-	a2 := []int{0, 2, 1, 3}
-	a3 := []int{-3, -2, 0, 1}
-
-	result1 := piscine.IsSorted(F, a1)
-	result2 := piscine.IsSorted(F, a2)
-	result3 := piscine.IsSorted(F, a3)
-
-	fmt.Println(result1)
-	fmt.Println(result2)
-	fmt.Println(result3)
-}
-
-func F(a, b int) int {
-	return a - b
+	fmt.Println(piscine.Atoi("12345"))
+	fmt.Println(piscine.Atoi("0000000012345"))
+	fmt.Println(piscine.Atoi("012 345"))
+	fmt.Println(piscine.Atoi("Hello World!"))
+	fmt.Println(piscine.Atoi("+1234"))
+	fmt.Println(piscine.Atoi("-1234"))
+	fmt.Println(piscine.Atoi("++1234"))
+	fmt.Println(piscine.Atoi("--1234"))
 }

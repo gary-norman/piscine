@@ -1,11 +1,10 @@
 package piscine
 
 func factorial(a int) int {
-	b := a
-	if a > 1 {
-		b = b * factorial(a-1)
+	if a <= 1 {
+		return 1
 	}
-	return b
+	return a * factorial(a-1)
 }
 
 func RecursiveFactorial(nb int) int {
